@@ -5,22 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27d5082d-b2f1-4f51-a982-13a95348dd5a" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/AnimatedImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/HangmanMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/Menug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/Shark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/WordReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/words.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/AudioLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/AudioLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/BusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/BusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/SearchLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/SearchLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/DataAccessLayer/Txt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/DataAccessLayer/Txt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/PresentationLayer/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/PresentationLayer/Presentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/Speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/back2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/duoicamap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/peterandship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/peterandship1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/s6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/score.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/seabeaunew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/sky2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/swimming2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/swimming3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/swimming4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/swimming5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/thancamap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/wave - Copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/wave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/waves.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/what-is-this.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/app/dictionaryapp/Game1/words.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +53,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -67,8 +88,8 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "database.data.extractors.current.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/hello/Desktop/JavaFile/DictionaryApp2/src/main/resources/Game",
+    "git-widget-placeholder": "game2",
+    "last_opened_file_path": "C:/Users/hello/Desktop/JavaFile/DictionaryApp3/src/main/resources/Game2",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,11 +113,11 @@
       <recent name="com.app.dictionaryapp.PresentationLayer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp3\src\main\resources\Game2" />
       <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\resources\Game" />
       <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\java\Game" />
       <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\java\com\app\dictionaryapp\Game1" />
       <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\resources" />
-      <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\resources\Game1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hello\Desktop\JavaFile\DictionaryApp2\src\main\resources\com.app.dictionaryapp.Game1" />
@@ -177,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BusinessLogic" />
-        <item itemvalue="Application.Presentation" />
         <item itemvalue="Application.Trie" />
         <item itemvalue="Application.SearchLogic" />
+        <item itemvalue="Application.Presentation" />
         <item itemvalue="Application.Cache" />
+        <item itemvalue="Application.BusinessLogic" />
       </list>
     </recent_temporary>
   </component>
@@ -366,6 +387,15 @@
           </properties>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Game/HangmanMain.java</url>
+          <line>278</line>
+          <properties class="Game.HangmanMain" method="startGame">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/BusinessLogic.java</url>
           <line>355</line>
@@ -375,6 +405,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/app/dictionaryapp/BusinessLogicLayer/Trie.java</url>
           <line>2</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Game2/Menug.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -28,4 +28,6 @@ module com.app.dictionaryapp {
   opens com.app.dictionaryapp.DataAccessLayer to javafx.fxml;
     opens Game to javafx.fxml;
     exports Game;
+    opens Game2 to javafx.fxml;
+    exports Game2;
 }
