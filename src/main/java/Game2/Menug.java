@@ -86,7 +86,7 @@ public class Menug extends StackPane {
         newgame.setGraphic(view);
         newgame.setOnAction(event -> {
             play = true;
-            System.out.println(play);
+            //System.out.println(play);
         });
 
         view = new ImageView(new Image(getClass().getResourceAsStream("logout.png")));
