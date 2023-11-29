@@ -1,14 +1,21 @@
 package Game2;
 import Game.AnimatedImage;
 import Game.HangmanMain;
+import com.app.dictionaryapp.BusinessLogicLayer.AudioLogic;
+import com.app.dictionaryapp.PresentationLayer.Presentation;
+import com.app.dictionaryapp.PresentationLayer.Presentation2;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -33,25 +40,54 @@ public class Main extends Application {
     boolean traloisai = false;
     int shitCnt = 0;
     int meatCnt = 0;
+    AudioLogic al = new AudioLogic();
     private SimpleStringProperty word = new SimpleStringProperty();
+    Button buttonBack = new Button();
 
+    public void switchtoMain(ActionEvent e) {
+
+        al.pauseAudio();
+        Platform.runLater(new Runnable() {
+            public void run() {
+                try {
+                    Stage newstage = (Stage)((Node)e.getSource()).getScene().getWindow();
+                    new Presentation2().start(newstage);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        //primaryScene = HelloApplication.helloScene;
+    }
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         AnchorPane root = new AnchorPane();
+        al.playSoundtrack(getClass().getResource("2. Kowloon Monsoon.mp3").toString());
 
         AnchorPane.setLeftAnchor(canvas,0.0);
         AnchorPane.setBottomAnchor(canvas,0.0);
 
         Text shittext = new Text("0");
         Text meattext = new Text("0");
-        AnchorPane.setLeftAnchor(shittext,0.0);
-        AnchorPane.setBottomAnchor(shittext,700.0);
-        AnchorPane.setLeftAnchor(meattext,0.0);
-        AnchorPane.setBottomAnchor(meattext,650.0);
+        Image road = new Image(getClass().getResourceAsStream("road4.png"), 1380, 800, false, false);
+        Image meat = new Image(getClass().getResourceAsStream("meaat.png"), 120, 90, false, false);
 
-        root.getChildren().addAll(canvas, shittext, meattext);
+        AnchorPane.setLeftAnchor(buttonBack, 0.0);
+        AnchorPane.setTopAnchor(buttonBack, 300.0);
+        ImageView view = new ImageView(new Image(getClass().getResourceAsStream("back3.png")));
+        view.setFitHeight(50);
+        view.setFitWidth(50);
+        view.setPreserveRatio(true);
+        buttonBack.setGraphic(view);
+        buttonBack.setOnAction(this::switchtoMain);
+        AnchorPane.setLeftAnchor(shittext,150.0);
+        AnchorPane.setTopAnchor(shittext,100.0);
+        AnchorPane.setLeftAnchor(meattext,150.0);
+        AnchorPane.setTopAnchor(meattext,220.0);
+
+        root.getChildren().addAll(canvas, shittext, meattext, buttonBack);
         Scene scene = new Scene(root, 1200, 800);
 
 
@@ -68,8 +104,7 @@ public class Main extends Application {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setStroke(Color.RED);
 
-        Image road = new Image(getClass().getResourceAsStream("road3.png"), 1380, 800, false, false);
-        Image meat = new Image(getClass().getResourceAsStream("meaat.png"), 150, 120, false, false);
+
         Image shit = new Image(getClass().getResourceAsStream("shit (2).png"), 80, 50, false, false);
         //Image car = new Image(getClass().getResourceAsStream("car.png"), 200, 75, false, false);
         AnimatedImage buf = new AnimatedImage();
@@ -121,6 +156,8 @@ public class Main extends Application {
                 gc.drawImage( road, x, 0);
                 gc.drawImage(road, 1380 + x, 0);
                 gc.drawImage( car.getFrame(1 + t % 14), 0, 540 );
+                gc.drawImage(shit, 0, 100);
+                gc.drawImage(meat, 0, 200);
                 traupos += trauspeed;
                 if(traupos <= -65) {
                     traupos = 1300;
@@ -130,19 +167,23 @@ public class Main extends Application {
 
                 if (!play) { // neu chua choi
                     if(!daadd) { // neu chua add menu
-                        Menug mn = new Menug(0);
+                        Menug mn = new Menug(meatCnt);
                         mng = mn;
-                        if( root.getChildren().size() > 3) {
-                            root.getChildren().remove(3);
+                        AnchorPane.setLeftAnchor(mn,470.0);
+                        AnchorPane.setTopAnchor(mn, 350.0);
+                        if( root.getChildren().size() > 4) {
+                            root.getChildren().remove(4);
                         }
                         root.getChildren().add(mn);
+                        shitCnt = 0;
+                        meatCnt = 0;
                         daadd = true;
                     } else { // neu add menu roi
                         play = mng.Getplay();
-
+                        //System.out.println(play);
                         if(play) {
                             traupos = 1380;
-                            root.getChildren().remove(3);
+                            root.getChildren().remove(4);
                             daadd = false;
                         }
                     }
@@ -157,7 +198,7 @@ public class Main extends Application {
 
                         } else if(status == 1) { // neu tra loi dung
                             if((currentNanoTime - time) / 1000000000.0 > 1.5) {
-                                root.getChildren().remove(3);
+                                root.getChildren().remove(4);
                                 status = 0;
                                 gaptrau = false;
                                 bgspeed = -1.5;
@@ -174,7 +215,7 @@ public class Main extends Application {
 
                         }else if(status == 2) { // neu tra loi sai
                             if((currentNanoTime - time) / 1000000000.0 > 1.5) {
-                                root.getChildren().remove(3);
+                                root.getChildren().remove(4);
                                 status = 0;
                                 gaptrau = false;
                                 bgspeed = -1.5;
@@ -215,7 +256,13 @@ public class Main extends Application {
                             gc.drawImage( shit, posShit , 600 );
                             if(posShit < 330) {
                                 traloisai = false;
+                                shitCnt ++;
+                                shittext.setText(String.valueOf(shitCnt));
                             }
+                        }
+                        if(shitCnt > 2) {
+
+                            play = false;
                         }
                     }
                 }

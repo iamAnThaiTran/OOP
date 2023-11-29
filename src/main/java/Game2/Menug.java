@@ -31,7 +31,7 @@ public class Menug extends StackPane {
     Button exitgame = new Button("exit");
     BufferedReader reader = null;
     public boolean play = false;
-    private Txt txt = new Txt("src/main/resources/Game/score.txt");
+    private Txt txt = new Txt("src/main/resources/Game2/score.txt");
 
     public void switchtoMain(ActionEvent e) {
 
@@ -62,7 +62,7 @@ public class Menug extends StackPane {
 
 
         rowmenu.setAlignment(Pos.CENTER);
-        rowmenu.getChildren().addAll(newgame, exitgame, textscore);
+        rowmenu.getChildren().addAll(newgame, textscore);
         //bg.setFill(def == "" ? Color.DARKSEAGREEN : Color.RED);
         bg.setHeight(50);
         bg.setWidth(300);

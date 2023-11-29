@@ -3,6 +3,8 @@ package com.app.dictionaryapp.BusinessLogicLayer;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
+
 import java.io.File;
 import java.nio.file.Files;
 
@@ -11,6 +13,7 @@ public class AudioLogic {
                                                                         "fc10970bb6msh2aad50d7bfa8cdap1b6d23jsna6a14e4b2126");
 
     private static final AudioLogic instance = new AudioLogic();
+    private MediaPlayer mediaplayer;
     public AudioLogic() {
 
     }
@@ -45,11 +48,23 @@ public class AudioLogic {
         mediaPlayer.play();
     }
 
+    public void playSoundtrack(String text) {
+        Media media = new Media(text);
+        mediaplayer = new MediaPlayer(media);
+        mediaplayer.setOnEndOfMedia(new Runnable() {
+            public void run() {
+                mediaplayer.seek(Duration.ZERO);
+            }
+        });
+        mediaplayer.play();
+
+    }
+
     /**
      * pause audio
      */
     public void pauseAudio() {
-
+        mediaplayer.stop();
     }
 
     public static AudioLogic getInstance() {
